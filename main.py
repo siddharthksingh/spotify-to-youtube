@@ -74,10 +74,10 @@ def add_video_to_playlist(playlist_id, video_id):
     ).execute()
 
 
-spotify_playlist_id = "add your own id bro"
+spotify_playlist_id = "5GlTjYiylLSziiwoivSpFQ"
 tracks = get_playlist_tracks(spotify_playlist_id)
 
-yt_playlist_id = create_youtube_playlist("youtube playlist name")
+yt_playlist_id = create_youtube_playlist("Electronic music")
 
 for track in tracks:
     video_id = search_youtube(track)
